@@ -26,7 +26,7 @@ class Untitled(unittest.TestCase):
         driver.find_element_by_name("submit").click()
         driver.find_element_by_id("q").clear()
         driver.find_element_by_id("q").send_keys(Keys.BACKSPACE)
-        driver.find_element_by_id("q").send_keys("srs")#.send_keys("star wars")
+        driver.find_element_by_id("q").send_keys("srs") #.send_keys("star wars")
         driver.find_element_by_id("q").send_keys(Keys.ENTER)
         driver.find_element_by_xpath("html/body/div[1]/div/div/section/div[3]/div[1]")
         element = driver.find_element_by_xpath("html/body/div[1]/div/div/section/div[3]/div[1]")
