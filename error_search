@@ -1,0 +1,37 @@
+
+
+1. На странице с результатом поиска нет сообщения "No movies where found."
+Выдаёт ошибку:
+
+======================================================================
+FAIL: test_untitled (__main__.Untitled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:/BARANCEV/Seleniun_php4dvd_lesson2_Rovinsky/php4dvd/php4dvd_search_positive.py", line 33, in test_untitled
+    assert element.text == "No movies where found."
+AssertionError
+
+----------------------------------------------------------------------
+Ran 1 test in 12.508s
+
+FAILED (failures=1)
+
+Process finished with exit code 1
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+2. На странице с результатом поиска есть сообщения "No movies where found.":
+Выдаёт ошибку:
+======================================================================
+ERROR: test_untitled (__main__.Untitled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:/BARANCEV/Seleniun_php4dvd_lesson2_Rovinsky/php4dvd/php4dvd_search_positive.py", line 33, in test_untitled
+    assert element.text == "No movies where found."
+  File "C:\BARANCEV\Seleniun_php4dvd_lesson2_Rovinsky\ENV\lib\site-packages\selenium\webdriver\remote\webelement.py", line 71, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "C:\BARANCEV\Seleniun_php4dvd_lesson2_Rovinsky\ENV\lib\site-packages\selenium\webdriver\remote\webelement.py", line 454, in _execute
+    return self._parent.execute(command, params)
