@@ -1,0 +1,29 @@
+C:\BARANCEV\Seleniun_php4dvd_lesson2_Rovinsky\ENV\Scripts\python.exe C:/BARANCEV/Seleniun_php4dvd_lesson2_Rovinsky/php4dvd/php4dvd_search_positive.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 5.016s
+
+OK
+Exception ignored in: <bound method Service.__del__ of <selenium.webdriver.chrome.service.Service object at 0x031301F0>>
+Traceback (most recent call last):
+  File "C:\BARANCEV\Seleniun_php4dvd_lesson2_Rovinsky\ENV\lib\site-packages\selenium\webdriver\common\service.py", line 141, in __del__
+    self.stop()
+  File "C:\BARANCEV\Seleniun_php4dvd_lesson2_Rovinsky\ENV\lib\site-packages\selenium\webdriver\common\service.py", line 120, in stop
+    self.send_remote_shutdown_command()
+  File "C:\BARANCEV\Seleniun_php4dvd_lesson2_Rovinsky\ENV\lib\site-packages\selenium\webdriver\common\service.py", line 99, in send_remote_shutdown_command
+    url_request.urlopen("http://127.0.0.1:%d/shutdown" % self.port)
+  File "C:\Python35-32\lib\urllib\request.py", line 162, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Python35-32\lib\urllib\request.py", line 465, in open
+    response = self._open(req, data)
+  File "C:\Python35-32\lib\urllib\request.py", line 483, in _open
+    '_open', req)
+  File "C:\Python35-32\lib\urllib\request.py", line 443, in _call_chain
+    result = func(*args)
+  File "C:\Python35-32\lib\urllib\request.py", line 1268, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Python35-32\lib\urllib\request.py", line 1242, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+
+Process finished with exit code 0
